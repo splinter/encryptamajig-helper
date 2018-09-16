@@ -1,0 +1,29 @@
+{
+  "name": "encryptamajig-helper",
+  "version": "1.0.0",
+  "description": "A utility to work with tokens encrypted with Encryptamajig library\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test mocha",
+    "build": "npm run clean && npm run compile && npm run lint && npm run test",
+    "clean": "rimraf dist",
+    "compile": "tsc --p .",
+    "lint": "tslint --type-check --project ."
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/crypto-js": "^3.1.43",
+    "@types/node": "6.0.46",
+    "@types/mocha": "2.2.41",
+    "@types/chai": "4.0.1",
+    "rimraf": "2.6.2",
+    "tslint": "5.11.0",
+    "typescript": "3.0.3"
+  },
+  "dependencies": {
+    "crypto-js": "^3.1.9-1",
+    "debug": "2.6.8",
+    "chai": "4.1.0"
+  }
+}
