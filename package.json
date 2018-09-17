@@ -2,7 +2,7 @@
   "name": "encryptamajig-helper",
   "version": "1.0.0",
   "description": "A utility to work with tokens encrypted with Encryptamajig library\"",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "NODE_ENV=test mocha",
     "build": "npm run clean && npm run compile && npm run lint && npm run test",
